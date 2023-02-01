@@ -1,0 +1,20 @@
+
+
+docker run --env MYSQL_ROOT_PASSWORD=root --env MYSQL_DATABASE=docker_db run mysql:5.7
+
+docker exec -it ce580841b690 bash
+
+mysql -uroot -proot
+
+
+docker image ls | grep node
+
+docker build -t custom-node . 
+
+ docker run -v $(pwd):/home/node/app/ custom-node
+
+docker run -v $(pwd):/home/node/app -p 3001:3000 custom-node
+
+docker exec -it 120f34343423 bash
+
+docker compose exec app bash
