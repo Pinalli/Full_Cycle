@@ -1,0 +1,6 @@
+
+go mod init github.com.pinalli/simulator
+
+docker compose up -d
+
+docker compose exec app bash
